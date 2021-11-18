@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="index.css" />
+    <title>Bootstrap 5 Basics</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Bootstrap Course</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">What You'll Learn</a>
+            </li>
+            <li class="nav-item">
+              <a href="#faq" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+       <!-- Showcase -->
+       <section
+       class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+     >
+       <div class="container">
+         <div class="d-sm-flex align-items-center justify-content-between">
+           <div>
+             <h1>Become a <span class="text-warning"> Web Developer </span></h1>
+             <p class="lead my-4">
+               We focus on teaching our students the fundamentals of the latest
+               and greatest technologies to prepare them for their first dev role
+             </p>
+             <button
+               class="btn btn-primary btn-lg"
+               data-bs-toggle="modal"
+               data-bs-target="#enroll"
+             >
+               Start The Enrollment
+             </button>
+           </div>
+           <img
+             class="img-fluid w-50 d-none d-sm-block"
+             src="img/showcase.svg"
+             alt=""
+           />
+         </div>
+       </div>
+     </section>
+
+    <!-- Newsletter -->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button class="btn btn-dark btn-lg" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Virtual</h3>
+                <p class="card-text">
+                  You will be taught 360 projects virtually via our Udemy Couse
+                  for 295.00$. You will get access to our emails to contact us
+                  if you have any queries or need any help with Bootstrap, HTML,
+                  CSS, React and JavaScript.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="col-md">
+              <div class="card bg-secondary text-light">
+                <div class="card-body text-center">
+                  <div class="h1 mb-3">
+                    <i class="bi bi-person-square"></i>
+                  </div>
+                  <h3 class="card-title mb-3">Virtual++</h3>
+                  <p class="card-text">
+                    You will be taught over 1000 projects virtually via our
+                    Udemy Couse for 599.00$. You will get access to our emails
+                    to contact us if you have any queries or need any help with
+                    Bootstrap, React, Javascript and CSS.
+                  </p>
+                  <a href="#" class="btn btn-dark">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="col-md">
+              <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                  <div class="h1 mb-3">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <h3 class="card-title mb-3">In Person</h3>
+                  <p class="card-text">
+                    You will be taught 360 projects in person by our instructors
+                    in our coding classes studio for 350.00$ You can come
+                    anytime to our coding classes studio if you have any queries,
+                    need any help with Bootstrap, React and CSS 
+                  </p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-betweem">
+          <div class="col-md">
+            <img src="img/fundamentals.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md pd-5">
+            <h2>Learn The Fundamentals</h2>
+            <p class="lead">
+              <span class="text-warning"> COMPUTER PROGRAMMING</span> is a step
+              by step process of designing and developing various sets of
+              computer programs to accomplish a specific computing outcome. The
+              process comprises several tasks like analysis, coding, algorithm
+              generation, checking accuracy and resource consumption of
+              algorithms, etc. The purpose of computer programming is to find a
+              sequence of instructions that solve a specific problem on a
+              computer.
+            </p>
+            <p>
+              Computer Programming is very easy if it is appropriately managed.
+              There are many computer programming languages available so
+              finalizing the right programming language is not an easy task.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-betweem">
+          <div class="col-md pd-5">
+            <h2>Learn React</h2>
+            <p class="lead">
+              React is a JavaScript library for building user interfaces.
+            </p>
+            <p>
+              It is maintained by Facebook and a community of individual
+              developers and companies.
+            </p>
+            <p>
+              React can be used as a base in the development of single-page or
+              mobile applications.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="img/react.svg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Question Accordion -->
+    <section id="faq" class="p-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Frequently Asked Questions (FAQ)</h2>
+          <div class="accordion accordion-flush" id="faq">
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-one"
+                >
+                  Where exactly are you located?
+                </button>
+              </h2>
+              <div
+                id="faq-one"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                    We are located in, 1163  Clarence Court, GILMAN, Iowa, 50106
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-two"
+                >
+                  How much does it cost to attend?
+                </button>
+              </h2>
+              <div
+                id="faq-two"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                    The virtual plan, which teaches you how to make 360 projects costs, 295.00$. The virtual++ plan which teaches you how to make 1000 projects costs 599.00$ and the in person plan which teaches you how to make 260 projects costs 350.00$. Please email us at codingclasses@chapedia.net and we will inform you on how to make the payment.
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-three"
+                >
+                  What do I need to Know?
+                </button>
+              </h2>
+              <div
+                id="faq-three"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                    You don't need to know anything, we teach you everything from the begining!
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-four"
+                >
+                  How do I sign up?
+                </button>
+              </h2>
+              <div
+                id="faq-four"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                    You can email us on codingclasses@kendalldoescoding.gq or call us on +1 (620)-263-0197.
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="instructors" class="p-5 bg-primary">
+          <div class="container">
+              <h2 class="text-center text-white">Our Instructors</h2>
+              <p class="lead text-center text-white mb-5">
+                  All of our instructors have been in the industry for 15+ years as a web developer.
+              </p>
+              <div class="row g-4">
+                  <div class="col-md-6 col-lg-3">
+                      <div class="card bg-light">
+                          <div class="card-body text-center">
+                              <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle" alt=""
+                              />
+                              <h3 class="card-title mb-3">Jeff M Tillery</h3>
+                              <p class="card-text">Innovative tech mind with 15 years of experience working as a computer programmer. Capable of working with a variety of technology and software solutions, and managing databases. Valuable team member who has experience diagnosing problems and developing solutions. Extensive expertise in networking systems and working with mainframe computers. Talented leader with unique ideas and a history of successful contributions in the field.</p>
+                              <a href="mailto:jeffm@kendalldoescoding.gq"><image class="email" src="img/mail.svg"></a>
+                              <a href="tel:715-488-7925"><image class="email" src="img/smartphone-call.svg"></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/8.jpg" class="rounded-circle" alt=""
+                            />
+                            <h3 class="card-title mb-3">Eugene S Ross</h3>
+                            <p class="card-text">A genius in programming, from Python to Xml to HTML and CSS to JavaScript with 15+ years of experience in ttechnology. He did his software engineering back in 1999. He worked at NASA for a long time, then when he became older found out that he really liked teaching something to people, thus, he joined this institute. From when he joined 2 years back, he has taugh over 10,000 people himself. He earns about 50,00$ per month and is the most high paying employee of the company. </p>
+                            <a href="mailto:eugeneross@kendalldoescoding.gq"><image class="email" src="img/mail.svg"></a>
+                            <a href="tel:801-349-5305"><image class="email" src="img/smartphone-call.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg" class="rounded-circle" alt=""
+                            />
+                            <h3 class="card-title mb-3">Mary J Cooper</h3>                            
+                            <p class="card-text">Mary J Cooper, has worked in the industry for 18+ years. She, has taught over 500 students in the last year. She is a professional in JavaScript and is pretty good at Python, HTML and CSS. While, Mary J Cooper works here, she also does freelance for people that need games or websites to be made and earns a fair bit there. She, coded her own browser, made multiple projects with Firebase and is a real genius when it comes to coding. Fellow employees of Mary, say that, She's really fun to work with. </p>
+                            <a href="mailto:mary@kendalldoescoding.gq"><image class="email" src="img/mail.svg"></a> 
+                            <a href="tel:407-628-9165"><image class="email" src="img/smartphone-call.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/78.jpg" class="rounded-circle" alt=""
+                            />
+                            <h3 class="card-title mb-3">Donald Bergman</h3>
+                            <p class="card-text">Donald has worked in the industry for 25+ years. He has coded almost a thousand projects in Python alone. He has also made websites for 150+ people over the years. He has taught over 200 people in the last year and about a 1000 people over the last couple of years, since he's been working for us. He is a really good Bootstrap teacher with a lot of knowlodge on the language. Fellow employees of him say that, he is very hard to get a hold of as he's always coding something, He just loves coding</p>
+                            <a href="mailto:donaldbergman@kendalldoescoding.gq"><image class="email" src="img/mail.svg"></a>
+                            <a href="tel:724-331-3850"><image class="email" src="img/smartphone-call.svg"></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md">
+              <h2 class="text-center mb-4">Contact Info</h2>
+              <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                  <span class="fw-bold">Main Location:</span> 3657 Farnum, Inkster, MI 48141, USA
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Enrollment Email:</span> <a href="mailto:codingclasses@chapedia.org">codingclasses@chapedia.org</a>
+
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Enrollment Phone:</span> <a href="tel:620-263-0197">620-263-0197</a>
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Alternative Enrollment Phone:</span> <a href="tel:708-468-5266">708-468-5266</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+          <p class="lead">Copyright &copy; 2021 Frontend Bootcamp</p>
+  
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+        </div>
+      </footer>
+
+       <!-- Modal -->
+    <div
+    class="modal fade"
+    id="enroll"
+    tabindex="-1"
+    aria-labelledby="enrollLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill out this form and we will get back to you</p>
+          <form>
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label">
+                First Name:
+              </label>
+              <input type="text" class="form-control" id="first-name" />
+            </div>
+            <div class="mb-3">
+              <label for="last-name" class="col-form-label">Last Name:</label>
+              <input type="text" class="form-control" id="last-name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="col-form-label">Phone:</label>
+              <input type="tel" class="form-control" id="phone" />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoia2VuZGFsbC1kZXYiLCJhIjoiY2twcjAyNGc5MDF0ZDJxdDhtemNxMmJyeiJ9.TTQ9NDgZU3G5J31ZuLG4XQ';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [-83.331361, 42.278338],
+zoom: 18,
+});
+</script>
+  </body>
+</html>
